@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <table style="border:4px solid blue; margin: 20px; font-size: 25px;">
+        <tr>
+            <th>Sno</th>
+            <th>Name</th>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+    <script>
+        let row=document.getElementsByTagName("tr")
+        let arr=[1,2,3,4,5]
+        for(i=0;i<arr.length;i++){
+            var data=document.createElement("td")
+            data.innerText=arr[i]
+            row[i+1].appendChild(data)
+        }
+        let arr2=["karunakar","lalitha","Nithya","Nithin","Nikki"]
+        for(i=0;i<arr.length;i++){
+            var data1=document.createElement("td")
+            data1.innerText=arr2[i]
+            row[i+1].appendChild(data1)
+        }
+        var h1_ele=document.getElementsByTagName("h1")
+        var name=prompt("Enter a name")
+        h1_ele[0].innerText=`${name}`
+
+    </script>
+   
+       
+    
+</body>
+</html>
